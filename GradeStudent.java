@@ -1,3 +1,11 @@
+// Write a Java switch case program to take the students names and marks of 10 students as input and display their grades according to the below conditions:
+//  * If marks above 90 then “A” grade
+//  * If marks between 90-80 then “B” grade
+//  * If marks between 80-70 then “C” grade
+//  * If marks between 70-60 then “D” grade
+//  * If marks between 45-60 then “E” grade 
+//  * Else “F”
+
 import java.util.Scanner;
 
 class StudentRecord{
