@@ -48,7 +48,8 @@ public class GradeStudent {
             case 7: return 'C';
             case 6: return 'D';
             case 5:
-            case 4: return 'E';
+            case 4: 
+                if(marks>=45) return 'E';
             default: return 'F';
         }
         return 'F';
