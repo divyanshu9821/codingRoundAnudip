@@ -56,17 +56,22 @@ public class GradeStudent {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int noOfStudent = 10;
+        int noOfStudent = 2;
         StudentRecord[] arr = new StudentRecord[noOfStudent];
         for(int i = 0;i<noOfStudent;i++){
             System.out.print("Enter student name: ");
+            sc.next();
             String stdName = sc.nextLine();
             System.out.print("Enter student marks: ");
             int marks = sc.nextInt();
-            arr[i].setMarks(marks);
-            arr[i].setName(stdName);
-            arr[i].setGrade(calculateGrade(marks));
-            System.out.println();
+
+            StudentRecord obj = new StudentRecord();
+
+            obj.setMarks(marks);
+            obj.setName(stdName);
+            obj.setGrade(calculateGrade(marks));
+            
+            arr[i] = obj;
         }
 
         for(int i = 0;i<noOfStudent;i++){
